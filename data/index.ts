@@ -123,7 +123,7 @@ export const projects = [
       "/bootstrap.ico",
       "/lar.svg",
     ],
-    link: "", // TO_DO:
+    link: "https://github.com/Musaab-Estaifee-Projects/Dalila-Tourism-Booking-Platform",
   },
 ];
 
