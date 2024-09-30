@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const MagicButton = ({
   title,
@@ -15,12 +15,12 @@ const MagicButton = ({
 }) => {
   return (
     <button
-      className="relative inline-flex h-12 w-full overflow-hidden rounded-lg p-[2px] focus:outline-none md:w-60 md:mt-10"
+      className="relative inline-flex h-12 w-full overflow-hidden rounded-lg p-[3px] focus:outline-none md:w-60"
       onClick={handleClick}
     >
-      <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+      <span className="absolute inset-[-1000%] animate-[spin_3s_linear_infinite] bg-[conic-gradient(from_0deg_at_50%_50%,#BD6F2F_0%,#D13372_25%,#6222BA_50%,#461885_75%,#BD6F2F_100%)]" />
       <span
-        className={`inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg bg-slate-950 px-7 text-sm font-semibold text-white backdrop-blur-3xl hover:bg-transparent transition duration-300 gap-4 ${otherClasses}`}
+        className={`inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg border-none bg-slate-950 px-7 text-sm font-semibold text-white backdrop-blur-3xl hover:bg-transparent hover:outline-none transition duration-400 gap-4 ${otherClasses}`}
       >
         {position === "left" && icon}
         {title}
@@ -30,4 +30,6 @@ const MagicButton = ({
   );
 };
 
-export default MagicButton
+export default MagicButton;
+
+// #BD6F2F_0%,#D13372_50%,#6222BA_75%,#461885_100%

@@ -7,8 +7,27 @@ import { ThemeProvider } from "./provider";
 // const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Musaab's Portfolio",
-  description: "Modern Portfolio With Creative Touches",
+  title: "Musaab Estaifee's Portfolio | Software Engineer & Web Developer",
+  description:
+    "Modern Portfolio with Creative Touches, created with latest available web technologies, Welcome to my portfolio! Explore my projects, technical skills, and experience in software engineering and web development.",
+  icons: {
+    icon: "/logo.ico",
+  },
+  openGraph: {
+    title: "Musaab Estaifee's Portfolio | Software Engineer & Web Developer",
+    description:
+      "Modern Portfolio with Creative Touches, created with latest available web technologies, Welcome to my portfolio! Explore my projects, technical skills, and experience in software engineering and web development.",
+    url: "", // TO-DO:
+    images: [
+      {
+        url: "/portfolio.webp", // TO-DO:
+        width: 1200,
+        height: 630,
+        alt: "portfolio",
+      },
+    ],
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -18,8 +37,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-      {/* <body className={inter.className}> */}
+      <body className="custom-scrollbar">
+        {/* <body className={inter.className}> */}
         <ThemeProvider
           attribute="class"
           //changing the theme and make it dark by default all of that with the help of next-themes packs.

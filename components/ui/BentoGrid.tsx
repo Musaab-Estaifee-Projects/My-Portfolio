@@ -51,7 +51,7 @@ export const BentoGridItem = ({
   spareImg?: string;
 }) => {
   const leftLists = ["ReactJS", "Express", "Typescript"];
-  const rightLists = ["VueJS", "NextJS", "GraphQL"];
+  const rightLists = ["NodeJS", "NextJS", "NoSQL"];
 
   const [copied, setCopied] = useState(false);
 
@@ -65,9 +65,12 @@ export const BentoGridItem = ({
   };
 
   const handleCopy = () => {
-    const text = "musaabestaifee@gmail.com";
+    const text = "eng.musaabestaifee@gmail.com";
     navigator.clipboard.writeText(text);
     setCopied(true);
+    setTimeout(() => {
+      setCopied(false);
+    }, 10000);
   };
 
   return (
@@ -89,7 +92,7 @@ export const BentoGridItem = ({
             <img
               src={img}
               alt={img}
-              className={cn(imgClassName, "object-cover object-center ")}
+              className={cn(imgClassName, "object-cover object-center")}
             />
           )}
         </div>
@@ -166,7 +169,7 @@ export const BentoGridItem = ({
             <div className="mt-5 relative">
               <div
                 className={`absolute -bottom-5 right-0 ${
-                  copied ? "block" : "block"
+                  copied ? "block" : "hidden"
                 }`}
               >
                 {/* <img src="/confetti.gif" alt="confetti" /> */}
