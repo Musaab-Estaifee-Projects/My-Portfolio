@@ -1,4 +1,3 @@
-// import { useState, useEffect } from "react";
 import Approach from "@/components/Approach";
 import Gallery from "@/components/Gallery";
 import Experience from "@/components/Experience";

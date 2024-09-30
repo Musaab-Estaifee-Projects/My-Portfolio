@@ -165,24 +165,32 @@ const MusicPlayer: React.FC = () => {
             </g>{" "}
           </svg>
 
-          <div className="absolute top-8 right-0 opacity-0 group-hover:opacity-100 text-white p-4 rounded-md transition-opacity duration-300 flex flex-col gap-3 items-start w-[120px] z-[9999] border border-neutral-200 dark:border-slate-800  backdrop-blur-[18px]">
+          <div className="absolute top-8 right-0 opacity-0 group-hover:opacity-100 text-white p-4 rounded-md transition-opacity duration-300 flex flex-col max-sm:!w-[365px] max-sm:!flex-row max-sm:top-0 max-sm:p-0.5 max-sm:px-3 max-sm:!right-0 gap-3 items-start w-[120px] z-[9999] border border-neutral-200 dark:border-slate-800  backdrop-blur-[18px]">
             <button
               onClick={togglePlay}
-              className="flex items-center gap-2 font-semibold"
+              className="flex items-center gap-2 font-semibold max-sm:font-normal"
             >
-              {isPlaying ? <FiPause className="mt-[2px] text-lg" /> : <FiPlay className="mt-[2px] text-lg" />}{" "}
+              {isPlaying ? (
+                <FiPause className="mt-[2px] text-lg" />
+              ) : (
+                <FiPlay className="mt-[2px] text-lg" />
+              )}{" "}
               {isPlaying ? "Pause" : "Play"}
             </button>
             <button
               onClick={toggleMute}
-              className="flex items-center gap-2 font-semibold"
+              className="flex items-center gap-2 font-semibold max-sm:font-normal"
             >
-              {isMuted ? <FiVolumeX className="mt-[2px] text-lg" /> : <FiVolume2 className="mt-[2px] text-lg text-red-600"/>}{" "}
+              {isMuted ? (
+                <FiVolumeX className="mt-[2px] text-lg" />
+              ) : (
+                <FiVolume2 className="mt-[2px] text-lg text-red-600" />
+              )}{" "}
               {isMuted ? "Unmute" : "Mute"}
             </button>
             <button
               onClick={restartMusic}
-              className="flex items-center gap-2 font-semibold"
+              className="flex items-center gap-2 font-semibold max-sm:font-normal"
             >
               <FiRotateCw className="mt-[2px] text-lg text-blue-500" /> Restart
             </button>
@@ -193,7 +201,7 @@ const MusicPlayer: React.FC = () => {
               step="0.01"
               value={volume}
               onChange={handleVolumeChange}
-              className="w-[90px]"
+              className="w-[90px] max-sm:w-[60px] max-sm:mt-1"
               aria-label="Volume"
             />
           </div>

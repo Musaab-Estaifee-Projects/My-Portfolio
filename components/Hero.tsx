@@ -137,7 +137,7 @@ const Hero = React.memo(() => {
   const prefix = shouldAppendN(fullText) ? "n" : "";
 
   return (
-    <div ref={heroSectionRef} className="pb-9 pt-16">
+    <div ref={heroSectionRef} className="pb-9 pt-16" id="#hero">
       {/* Use the relative paths directly from the public folder */}
       <audio ref={typingSoundRef} src="/sounds/keyboard-typing.mp3" />
       <audio ref={deletingSoundRef} src="/sounds/keyboard-typing.mp3" />
@@ -191,7 +191,7 @@ const Hero = React.memo(() => {
             className="text-center text-[40px] md:text-5xl lg:text-6xl lg:h-[200px] max-lg:h-[150px]"
             words={`A${prefix} ${typingState.text}`}
           />
-          <a href="#about">
+          <a href="#mindset">
             <MagicButton
               title="Unveil My Mindset"
               icon={<FaRegShareSquare className="text-xl" />}

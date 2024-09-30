@@ -7,7 +7,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="w-full mb-[100px] pb-10 md:mb-5" id="contact">
+    <footer className="w-full mb-[50px] pb-5 md:mb-5" id="contact">
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw]">
           Ready To Take{" "}
@@ -22,14 +22,21 @@ const Footer = () => {
         <a href="mailto:eng.musaabestaifee@gmail.com" target="_blank">
           <MagicButton
             title="Let's Get In Touch"
-            icon={<FaGlobe  size={18}/>}
+            icon={<FaGlobe size={18} />}
             position="right"
           />
         </a>
       </div>
       <div className="flex mt-16 md:flex-row flex-col max-md:gap-6 justify-between items-center">
-        <p className="md:text-base text-sm leading-[1.6] font-bold">
-          Copyright © {currentYear} Eng.Musaab S Estaifee
+        <p className="md:text-base text-sm leading-[1.6] lg:font-bold max-lg:font-semibold max-sm:text-center">
+          <img
+            src="/logo.ico"
+            alt="logo"
+            width={25}
+            height={25}
+            className="inline-block mb-[2px]"
+          />
+          {"  "}Copyright © {currentYear} Eng.Musaab_S_Estaifee
         </p>
         <div className="flex items-center md:gap-3 gap-6">
           {socialMedia.map((profile) => (
