@@ -31,7 +31,7 @@ const RecentProjects = () => {
                   className="z-10 absolute bottom-0 px-2"
                 />
               </div>
-              <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1 bg-gradient-to-r from-[#F68C41] via-[#FA487F] to-[#9F64F4] text-transparent bg-clip-text">
+              <h1 className="font-bold lg:text-2xl md:text-xl max-md:text-base max-sm:text-[15px] line-clamp-1 bg-gradient-to-r from-[#F68C41] via-[#FA487F] to-[#9F64F4] text-transparent bg-clip-text">
                 {title}
               </h1>
               <p className="lg:text-lg lg:font-normal font-light text-sm line-clamp-3 max-sm:text-xs">
@@ -42,7 +42,7 @@ const RecentProjects = () => {
                   {iconLists.map((icon, index) => (
                     <div
                       key={icon}
-                      className="border border-white/[0.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
+                      className="border border-white/[0.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 max-sm:h-[29px] max-sm:w-[29px] flex justify-center items-center"
                       style={{ transform: `translateX(-${5 * index * 2}px)` }}
                     >
                       <img src={icon} alt={icon} className="p-2" />
@@ -50,7 +50,7 @@ const RecentProjects = () => {
                   ))}
                 </div>
                 <div className="flex justify-center items-center">
-                  <p className="flex lg:text-xl md:text-xs text-sm font-bold">
+                  <p className="flex lg:text-xl md:text-xs max-md:text-xs max-sm:text-xs max-[345px]:text-[10px] font-bold">
                     <a href={link} target="_blank">
                       <span className="bg-gradient-to-r from-[#F68C41] via-[#FA487F] to-[#9F64F4] text-transparent bg-clip-text">
                         Check Live Site

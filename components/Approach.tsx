@@ -47,7 +47,7 @@ const Approach = () => {
           <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" /> */}
         </Card>
         <Card
-          title="Development & Launch"
+          title="Deployment & Launch"
           icon={<AceternityIcon order="Phase 3" />}
           description="This final phase is where vision meets execution. After thorough testing and optimization, I deploy the application using cutting-edge tools and best practices, ensuring a smooth and seamless launch. Whether deploying a sophisticated MERN stack application or a static/dynamic Next.js website/webapp, I handle everything from server configurations to database setups. With a focus on performance, security, and scalability, your project is launched with a solid foundation, ready to deliver exceptional user experiences and drive business growth."
         >
