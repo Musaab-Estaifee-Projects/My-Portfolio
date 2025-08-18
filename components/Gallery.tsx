@@ -8,7 +8,7 @@ const Gallery = () => {
       <h1 className="heading">
         A Visual Journey Into{" "}
         <span className="bg-gradient-to-r from-[#F68C41] via-[#FA487F] to-[#9F64F4] text-transparent bg-clip-text">
-          DevOverlow
+          DevOverflow
         </span>
       </h1>
       {/* Projects' Cards */}
