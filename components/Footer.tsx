@@ -3,6 +3,8 @@ import MagicButton from "./ui/MagicButton";
 import { FaGlobe } from "react-icons/fa6";
 import { socialMedia } from "@/data/index";
 
+export const dynamic = "force-dynamic";
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
